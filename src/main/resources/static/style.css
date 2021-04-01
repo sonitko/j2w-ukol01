@@ -1,0 +1,135 @@
+/* Moderní box model - nastavená šířka boxu je včetně paddingu a borderu */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #282425;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Hlavička */
+h1 {
+  margin: 0;
+  padding: 150px 30px;
+  font-size: 70px;
+  text-align: center;
+  color: #facc9d;
+  background: url('obrazky/hlavicka.jpg') center center no-repeat;
+  background-size: cover;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #756158;
+}
+
+h3 {
+  font-size: 24px;
+  color: #756158;
+}
+
+a {
+  color: #756158;
+  font-style: italic;
+}
+
+a:hover {
+  color: #282425;
+}
+
+/* Sekce a barvy pozadí */
+section {
+  padding: 50px 15%;
+  overflow: auto;
+}
+
+.omne {
+  background-color: #fff1e6;
+}
+
+.fotogalerie,
+.kontakt {
+  background-color: #f9e3d0;
+}
+
+/* Patička */
+.paticka {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #282425;
+  color: white;
+}
+
+/* Sekce O mně */
+.profil {
+  float: left;
+  width: 300px;
+  margin: 15px 50px 30px 0;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Sekce Fotogalerie */
+.fotogalerie img {
+  width: 32%;
+  border: 2px solid #756158;
+  border-radius: 5px;
+}
+
+/* Sekce Kontakt */
+.obal-mapy {
+  float: left;
+  width: 350px;
+  position: relative;
+  margin: 0 30px 30px 0;
+}
+
+.mapa {
+  width: 350px;
+}
+
+.spendlik {
+  position: absolute;
+  left: 167px;
+  top: 50px;
+}
+
+/* Hlavní menu */
+.menu {
+  text-align: center;
+  color: white;
+  background-color: #282425;
+  border-top: 1px solid #9c8175;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  background-color: #756158;
+}
